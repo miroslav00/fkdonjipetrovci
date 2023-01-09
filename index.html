@@ -1,0 +1,1078 @@
+<!doctype html>
+<html lang="eng">
+ <head> 
+  <!--naslov na browseru--> 
+  <title>Fk Donji Petrovci</title> 
+  <link rel="icon" href="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcddd1913d3b.jpg?nocache=1573807929"> 
+  <meta charset="utf-8"> 
+  <link rel="stylesheet" href="vezba.css" type="text/css"> 
+  <meta name="viewport" content="width-device-width,initial-scale=1.0"> 
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet"> 
+  <style>
+body{
+ background-color: purple;}
+ p{
+ font-size:18px;
+ color:white;
+ text-decoration: none;}
+.p1{
+font-size:25px;
+padding:0;
+margin:5px;
+color:red;
+}
+
+  a{
+  text-decoration:none;
+  color:white;}
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  border:6px solid white;
+  border-radius:20%;
+  height:100px;
+  }
+ 
+ 
+  /*ikonice ✅u headeru*/
+ .dmreze{
+ width:40px;
+ height:40px;
+ margin:5px;
+ border-radius:20%;}
+  
+  li {
+  float: left;
+  }
+  
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+  .active:hover{
+  color:white;
+  background-color:red;}
+ 
+  
+  /*slika✅ crkve*/
+ #img1{
+  float:right;
+  width:130px;
+  height:200px;
+  border:5px solid red;
+  border-radius:50%;}
+ 
+
+
+ 
+ .button4{
+  
+   background-color:skyblue;
+   border:10px solid white;
+   border-radius:40px;
+   width:350px;
+   height:70px;
+   font-size:20px;
+   text-align:center;
+ }
+.button4:hover{
+   background-color:red;}
+#button5{
+color:white;
+background-color:red;
+  border:10px solid white;
+  border-radius:40px;
+  width:350px;
+  height:70px;
+  font-size:20px;
+  text-align:center;
+}
+#button5:hover{
+background-color:green; }
+
+#button6{
+color:white;
+background-color:red;
+  border:10px solid white;
+  border-radius:40px;
+  width:350px;
+  height:70px;
+  font-size:20px;
+  text-align:center;
+}
+#button6:hover{
+background-color:green; }
+
+
+/*promena✅ boje body*/
+#color1 {
+    position: relative;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;;
+}
+
+#color2 {
+    position: relative;
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;;
+}
+
+#color3 {
+    position: relative;
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;;
+}
+#color4 {
+    position: relative;
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;;
+}
+
+#color5 {
+    position: relative;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;;
+}
+
+#color6 {
+    position: relative;
+    background-color: silver;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;;
+}
+
+#color7 {
+    position: relative;
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;;
+}
+
+#color8 {
+    position: relative;
+    background-color: brown;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;;
+}
+
+#color9 {
+    position: relative;
+    background-color: violet;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;;
+}
+#color10 {
+    position: relative;
+    background-color: purple;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;;
+}
+
+/*traka za vest✅*/
+marquee{
+border-radius:10px;
+background-color:white;
+margin:10px;}
+
+h2 {color:white;}
+h3 {font-size:30px;
+  color: purple;
+  background-color:white;
+  border-radius:30px;
+  margin-top:5px;
+
+
+  
+  }
+  @keyframes blinker{
+  50%{
+  opacity:0;
+  }
+  
+ 
+}
+
+/*kocka✅*/
+.main {
+    width:250px;
+    height:250px;
+    margin:0px auto;
+    perspective:1000px;
+}
+.mainBox {
+    width:250px;
+    transform-style:preserve-3d;
+    animation:rotate 9s linear infinite;
+}
+.mainBox div{
+    position:absolute;
+    width:200px;
+    height:200px;
+    background-color:white;
+    opacity:1;
+    color:white;
+    text-align:center;
+    line-height:200px;
+    box-shadow:5px 5px 30px skyblue;
+}
+.front{
+    transform:translateZ(100px);
+}
+.back{
+    transform:rotateY(180deg) translateZ(100px);
+}
+.left{
+    transform:rotateY(-90deg) translateX(-100px);
+    transform-origin:left;
+
+}
+.right{
+    transform:rotateY(90deg) translateX(100px);
+    transform-origin:right;
+
+}
+.top{
+    transform:rotateX(-90deg) translateY(-100px);
+    transform-origin:top;
+
+}
+.bottom{
+    transform:rotateX(90deg) translateY(100px);
+    transform-origin:bottom;
+}
+
+@keyframes rotate {
+    0%{
+        transform:rotateY(0) rotateX(0);
+    }
+    100%{
+        transform:rotateY(360deg) rotateX(0);
+    }
+}
+
+        
+/*spisak igraca✅*/
+.players h2{
+     background-color:red;
+    color:white;
+    font-size:20px;
+    text-align:center;
+    text-decoration:none;
+}
+
+/*galerija fk ✅donji petrovci*/
+#myImg{
+    display:;
+    margin:inline-block;
+    width: 350px;
+    height: 260px;
+    border:5px solid white;
+    border-radius:15px;
+    box-shadow:5px 3px 5px gray;
+}
+
+.center{
+    text-align:center;
+}
+
+.pagination{
+    display:inline-block;
+    margin-top:30px;
+}
+
+.dugme{
+    text-decoration:none;
+    background-color: red;
+    color: white;
+    width: 42px;
+    height: 42px;
+    font-size:2.2em;
+    padding:8px 8px;
+    float:left;
+    margin:2px 4px;
+    border:1px solid #ddd;
+    border-radius:7px;
+    transition:all 0.5s ease;
+}
+
+.dugme:hover{
+    background-color:green;
+    color:white;
+}
+.dugme:active{
+    background-color:yelow;
+    color:white;
+    transform:scale(0.9);
+}
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+sub {
+color: white;
+font-size: 10px;
+padding: 8px 08px;
+border: 5px solid white;
+text-align: center;}
+
+.container img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.container img:hover{
+    height:400px;
+}
+
+.container .btn {
+    position: absolute;
+    width:200px;
+    top: 80%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: purple;
+    font-size: 20px;
+    padding: 8px 08px;
+    border: 5px solid red;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: blue;
+    color:white;
+}
+ .champ h2{color:gold;
+ text-align:center;
+ margin-top:0;}
+ 
+.sampimg{
+width:340px;
+height:290px;
+border:10px solid gold;
+border-radius:20%;}
+
+.slide img{
+
+width:340px;
+height:260px;
+
+border:2px;
+
+border-radius:10px;
+
+animation:fadeEffect 0.5s ease-in-out;
+
+}
+.aa{
+   border:5px solid white;
+  
+ 
+ 
+}
+
+.aa:hover .prev{
+
+opacity:0.5;
+
+animation:clickme 0.5s;
+
+}
+
+.aa:hover .next{
+
+opacity:0.5;
+
+animation:clickme 0.5s;
+
+}
+
+.main-slide-container{
+
+padding:5px;
+
+}
+
+.main-slide-container .next{
+
+animation:clickme 0.1s;
+
+}
+
+.main-slide-container .prev{
+
+animation:clickme 0.1s;
+
+}
+
+.prev{
+
+border:2px;
+
+border-radius:50%;
+
+padding:20px;
+
+
+font-weight:340;
+
+outline:none;
+
+transition-duration:0.2s;
+
+position:absolute;
+
+top:50%;
+
+left:15px;
+
+transform:translate(0%, -50%);
+
+opacity:0.0;
+
+}
+
+.next{
+
+border:2px;
+
+border-radius:50%;
+
+padding:20px;
+
+font-weight:340;
+
+outline:none;
+
+transition-duration:0.2s;
+
+position:absolute;
+
+top:50%;
+
+right:15px;
+
+transform:translate(0%, -50%);
+
+opacity:0.0;
+
+}
+
+
+
+
+
+
+
+
+/*digitalni sat✅*/
+#clock {
+    font-family: monospace;
+    color:green;
+    background-color: #000;
+    font-size: 44px;
+    border: 5px solid green;
+    border-radius: 15px;
+    height: 38px;
+    width: 260px;
+    top: calc(50% - 29px);
+    left: calc(50% - 130px);
+    padding-bottom: 12px;
+}
+/*datum vreme✅*/
+#date {
+    color:green;
+    background-color: #000;
+    font-size: 16px;
+    border: 5px solid green;
+    border-radius: 10px;
+    height: 24px;
+    width: 220px;
+    top: calc(50% + 29px);
+    left: calc(50% - 110px);
+    padding-top: 5px;
+}
+/*footer✅*/
+#footer{
+   margin-top:10px;
+   width:100%;
+   float:left;
+   background:green;
+   border:8px solid black;
+   color:black;
+   border-radius:30%;
+  
+   
+}
+#footer p {
+font-size:28px;
+font-family:cursive;
+text-align:center;
+color:black;
+}
+
+
+</style> 
+ </head> 
+ <body>
+
+ <ul>
+ <li><a class="active" href="#linkovi">Linkovi</a></li>
+ <li><a class="active" href="#img1">Podaci</a></li>
+ <li><a class="active" href="#myImg">Galerija</a></li>
+ <li><a class="active" href="#clock">Sat</a></li>
+ 
+ <a href="https://www.instagram.com/accounts/login/" ><img class="dmreze" src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" /></a>
+<a href="https://m.facebook.com/" ><img class="dmreze" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/512px-Facebook_icon.svg.png" /></a>
+<a href="https://m.youtube.com/"> <img class="dmreze" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/142px-YouTube_full-color_icon_%282017%29.svg.png" /></a>
+<a href="https://www.google.com/?gws_rd=ssl#spf=1585165236320"> <img class="dmreze" src="https://clipartart.com/images250_/google-icon-clipart-download.jpg" /></a>
+<a href="https://www.sofascore.com/"> <img class="dmreze" src="https://backpagefootball.com/wp-content/uploads/2014/02/SofaScore-logo-e1393309495507.png" /></a>
+<a href="https://www.weathercrave.com/weather-forecast-serbia/city-600402/weather-forecast-donji-petrovci-today" ><img class="dmreze" src="https://www.viaggitribali.it/wp-content/uploads/2016/11/meteo.png" /></a>
+ </ul>
+ <marquee><b><p class="p1">
+ ⚽⚽⚽FK DONjI PETROVCI-FK BORAC MARTINCI 1:2
+ ⚽⚽⚽</p></b></marquee>
+ <div>
+ <button id="color1" onClick="color1()">
+        
+    </button>
+
+    <button id="color2" onClick="color2()">
+    </button>
+    <button id="color3" onclick="color3()">
+    
+    </button>
+     <button id="color4" onclick="color4()">
+        
+    </button>
+    
+    
+    
+    <button id="color5" onclick="color5()">
+    
+    </button>
+    
+    
+    
+    <button id="color6" onclick="color6()">
+    
+    </button>
+    
+    <button id="color7" onclick="color7()">
+        
+    </button>
+    
+    
+    
+    <button id="color8" onclick="color8()">
+    
+    </button>
+    
+    
+    
+    <button id="color9" onclick="color9()">
+  
+    </button>
+    <button id="color10" onclick="color10()" >
+    </button></div>
+    
+ <center> 
+ <h3>FK DONJI PETROVCI<h3> </center>
+  
+  <div class="main">
+  <div class="mainBox" draggable="true">
+  <div class="front">
+  
+  <img width="180px";height="200px"; src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcddd1913d3b.jpg?nocache=1574436763"/></div>
+  <div class="back"><img width="180px";height="185px"; src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcddd1913d3b.jpg?nocache=1574436763"/></div>
+  <div class="left"><img width="180px";height="185px"; src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcddd1913d3b.jpg?nocache=1574436763"/></div>
+  <div class="right"><img width="180px";height="200px"; src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcddd1913d3b.jpg?nocache=1574436763"/></div>
+  <div class="top"><img width="180px";height="200px"; src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcddd1913d3b.jpg?nocache=1574436763"/></div>
+  <div class="bottom"><img width="180px";height="200px"; src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcddd1913d3b.jpg?nocache=1574436763"/></div>
+  </div>
+  </div>
+  
+  <hr size="10px" color="white">
+  <div><a href="https://sh.m.wikipedia.org/wiki/%D0%94%D0%BE%D1%9A%D0%B8_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%86%D0%B8" >
+  <img id="img1" src="https://mapio.net/images-p/17014883.jpg"/></a>
+  <p> Adresa: Jankovic Muje b.b.
+   <br>Osnovan: 1926
+   <br>Boja kluba: ljubicasta 
+    <br>Drzava: Srbija
+    <br>Pokrajina:Vojvodina
+    <br>Okrug: sremski
+    
+    <br> <a href="https://sr.m.wikipedia.org/sr-ec/%D0%94%D0%BE%D1%9A%D0%B8_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%86%D0%B8" target="blank">
+    Mesto:Donji Petrovci
+    </a>
+    <br>Liga: Sremska I
+    
+     </p> </div>
+  <div class="container"> <sub>zoom</sub>
+   <img src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dd2caff078b1.jpg?nocache=1574095630" alt="testing" style="width:100%">
+   <a href="https://sr.m.wikipedia.org/sr-ec/%D0%94%D0%BE%D1%9A%D0%B8_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%86%D0%B8"><button class="btn">o mestu</button></a> 
+  </div> 
+  <div> 
+   <img width="350" height="270" src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dd7ff76bf0c7.jpg?nocache=1574436763"> 
+  </div> 
+  <div class="sampioni"> 
+  <center> <h3>Sezona 2018/19</h3> </center>
+   
+   <h2><a href="druga.html"> <button id="button5" >
+   Spisak igraca <b>klikni</b></button></a></h2>
+   
+ 
+   <img class="sampimg" src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcde7c8cfa58.jpg?nocache=1573777365"> 
+  </div> 
+ 
+  <div class="champ" > 
+  <h2>Sampioni Druge sremske lige 2011/2012</h2> </div>
+  
+  
+  <div id="linkovi">
+  
+   <a href="https://www.srbijasport.net/team/56115-donji-petrovci-donji-petrovci">
+   <u><font size="15" color="silver">
+    <u><button class="button4"> Fk donji petrovci rezultati</button>
+    </u></font> </u></a>  <u> <br>
+     
+     <a href="https://sportin.biz/kategorija/fudbal/ofl-ruma/">
+   <font size="15" color="silver"> <u><button class="button4"> 
+   sport in OFL Ruma</button></u></font></a><a></a> <br>
+    
+    <a href="https://int.soccerway.com/national/serbia/super-liga/20212022/regular-season/r63089/">
+    <font size="15" color="silver">
+     <u><button class="button4"> Superliga <b>soccerway</b>
+    </button> </u></font></a><a></a> 
+     
+     <a href="https://sportin.biz/kategorija/fudbal/"><font size="15" color="silver">
+ <u><button class="button4">vesti <b>Sportin biz</b></button></u> </font></a>  <br>
+  
+  <a href="https://www.dnevnik.rs/tags/opstinska-liga-ruma"><font size="15" color="silver">
+ <u><button class="button4">vesti <b>DNEVNIK OFL RUMA</b></button></u> </font></a> 
+  <br> 
+  
+  <a href="https://www.b92.net/sport/"> <font size="15" " color="silver">
+   <u><button class="button4">Sport <b>B92</b></button></u></font></a> 
+   <br> <br>
+    
+    <a href="https://m.rezultati.com/"> <font size="15" color="silver">
+    <u><button class="button4">Kladionica rezultati</button>
+    </u></font></a> </u></div> 
+  <u> <br>
+ 
+
+ 
+ <button class="prev">&#x2190;</button>
+ 
+ <button class="next">&#x2192;</button>
+ 
+ 
+ 
+ </div>
+ 
+ 
+ <br>
+ 
+ 
+
+ 
+   
+   
+    <img id="myImg" src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcde7c8cfa58.jpg?nocache=1574428965" alt="blank"> 
+    <div class="center"> 
+     <div class="pagination"> 
+      <a class="dugme" onclick="myFunction1()">1</a> 
+      <a class="dugme" onclick="myFunction2()">2</a> 
+      <a class="dugme" onclick="myFunction3()">3</a> 
+      <a class="dugme" onclick="myFunction4()">4</a> 
+      <a class="dugme" onclick="myFunction5()">5</a> 
+      <a class="dugme" onclick="myFunction6()">6</a> 
+      <a class="dugme" onclick="myFunction7()">7</a> 
+      <a class="dugme" onclick="myFunction8()">8</a> 
+      <a class="dugme" onclick="myFunction9()">9</a> 
+      <a class="dugme" onclick="myFunction10()">10</a> 
+      <a class="dugme" onclick="myFunction11()">11</a> 
+      <a class="dugme" onclick="myFunction12()">12</a> 
+      <a class="dugme" onclick="myFunction13()">13</a> 
+      <a class="dugme" onclick="myFunction14()">14</a> 
+      <a class="dugme" onclick="myFunction15()">15</a> 
+      <br> 
+      <br> 
+     </div> 
+    </div> 
+   </div> 
+   <hr size="15" color="white" ;>
+   
+   <!--REKLAME PIVO-->
+   <div> 
+    <center> 
+     <img id="slider" src="https://www.google.com/url?q=https://s3.eu-central-1.amazonaws.com/jelenpivo-static/products/product-1.png&amp;sa=U&amp;ved=0ahUKEwi_l4fSsvTlAhVGlYsKHXIJCdEQ5hMIBTAA&amp;usg=AOvVaw1sM0jHMjQUnrE-n3YDqsiR" width="100px" height="200px"> 
+    </center> 
+   </div>
+  
+ 
+ 
+           <hr size="15" color="white" ;> 
+
+ <canvas id="canvas" width="330" height="330"></canvas>
+
+   <hr size="5" color="white" ;>
+  
+  
+   
+<center><div id="clock"></div></center>
+        <center><div id="date"></div></center>
+        
+        
+   <footer id="footer"><p>
+    <b> Created by Miroslav Šaša</b> </p>
+  </footer>
+ 
+ <script type="text/javascript">
+
+
+
+
+
+
+
+   /*promena✅ boje body*/
+   function color1() {document.body.style.backgroundColor="red";
+   }
+   function color2() {
+   document.body.style.backgroundColor="green";
+   }
+   
+   function color3() {
+   document.body.style.backgroundColor="yellow";
+   }
+   function color4() {
+   document.body.style.backgroundColor="blue";
+   }
+   
+   function color5() {
+   document.body.style.backgroundColor="black";
+   }
+   
+   function color6() {
+   document.body.style.backgroundColor="silver";
+   }
+   
+   function color7() {
+   document.body.style.backgroundColor="aqua";
+   }
+   
+   function color8() {
+   document.body.style.backgroundColor="brown";
+   }
+   
+   function color9() {
+   document.body.style.backgroundColor="violet";
+   }
+   function color10() {
+   document.body.style.backgroundColor="purple";}
+ 
+
+
+
+ 
+ /*galerija ✅fk donji petrovci*/
+ function myFunction1(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcde7ec1c864.jpg?nocache=1574428965"
+ };
+ 
+ 
+ function myFunction2(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcde80aeec54.jpg?nocache=1574428965"
+ };
+ 
+ function myFunction3(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcde5a481c99.jpg?nocache=1574428965"
+ 
+ };
+ 
+ 
+ function myFunction4(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcde5c7b37fe.jpg?nocache=1574428965"
+ };
+ 
+ function myFunction5(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcde5e232021.jpg?nocache=1574428965"
+ };
+ 
+ function myFunction6(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcde61a4ae3b.jpg?nocache=1574428965"
+ }
+ 
+ function myFunction7(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcec9947ff92.jpg?nocache=1574428965"
+ };
+ 
+ 
+ function myFunction8(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dd025d2892c9.jpg?nocache=1574428965"
+ };
+ 
+ 
+ function myFunction9(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dd025a7c5836.jpg?nocache=1574428965"
+ };
+ 
+ function myFunction10(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dd025eb72cca.jpg?nocache=1574428965"
+ };
+ 
+ 
+ function myFunction11(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dd077f0561ae.jpg?nocache=1574428965"
+ };
+ 
+ function myFunction12(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dd07a417ec45.jpg?nocache=1574428965"
+ 
+ };
+ 
+ 
+ function myFunction13(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dd07c2ea9dfd.jpg?nocache=1574428965"
+ };
+ 
+ function myFunction14(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dd077a94a745.jpg?nocache=1574428965"
+ };
+ 
+ function myFunction15(){
+ document.getElementById("myImg").src="https://fkdonjipetrovci.simdif.com/images/public/sd_5dcec9b005c63.jpg?nocache=1574428965"
+ }
+
+
+
+
+
+ /*reklame✅*/
+ var images = [
+    'https://www.google.com/url?q=https://s3.eu-central-1.amazonaws.com/jelenpivo-static/products/product-1.png&sa=U&ved=0ahUKEwi_l4fSsvTlAhVGlYsKHXIJCdEQ5hMIBTAA&usg=AOvVaw1sM0jHMjQUnrE-n3YDqsiR', 
+    'https://carlsbergsrbija.rs/media/11868/bg_tuborg-green.png?height=700&mode=max', 
+    'https://www.google.com/url?q=https://carlsbergsrbija.rs/media/17377/rs_jul17-lav.png&sa=U&ved=0ahUKEwjtzLGVs_TlAhXlpYsKHSWnB_EQ5hMIBTAA&usg=AOvVaw0HcOvTryUpVgB4ORC865Mp'
+ ];
+ var num = 0;
+ function next() {
+    var slider = document.getElementById('slider');
+    num++;
+    if(num >= images.length) {
+        num = 0;
+    }
+    slider.src = images[num];
+ }
+ setInterval(next, 4000);
+
+
+
+
+
+/*Analogni ✅sat*/
+window.addEventListener('load', function() {
+// Create a canvas object from the HTML canvas element
+var canvas = document.getElementById('canvas');
+
+// Create a 2d drawing object for the canvas object
+var ctx = canvas.getContext('2d');
+
+// Calculate the clock radius, using the height of the canvas
+var radius = canvas.height / 2;
+// Using the canvas height to calculate the clock radius, makes the clock work for all canvas sizes
+
+// Remap the (0,0) position of the drawing object to the center of the canvas
+ctx.translate(radius, radius);
+
+// Reduce the clock radius to 90% to draw the clock well inside the canvas
+radius = radius * 0.90;
+
+// Call the drawClock function at intervals
+setInterval(drawClock, 1000);
+// The interval is in milliseconds. drawClock will be called for each 1000 milliseconds
+
+// Create a function to draw the clock
+function drawClock() {
+drawFace(ctx, radius);
+drawNumbers(ctx, radius);
+drawTime(ctx, radius);
+}
+
+// Create a drawFace() function for drawing the clock face
+function drawFace(ctx, radius) {
+// Draw the white circle
+ctx.beginPath();
+ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+ctx.fillStyle = 'black';
+ctx.fill();
+
+// Create a radial gradient 95% and 105% of original clock radius
+grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
+// Create 3 color stops, corresponding with the inner, middle, and outer edge of the arc
+grad.addColorStop(0, 'green');
+grad.addColorStop(0.5, 'green');
+grad.addColorStop(1, 'green');
+// The color stops create a 3D effect
+
+// Define the gradient as the stroke style of the drawing object
+ctx.strokeStyle = grad;
+// Define the line width of the drawing object 10% of radius
+ctx.lineWidth = radius * 0.1;
+// Draw the circle
+ctx.stroke();
+
+// Draw the clock center
+ctx.beginPath();
+ctx.arc(0, 0, radius * 0.04, 0, 2 * Math.PI);
+ctx.fillStyle = 'green';
+ctx.fill();
+}
+
+// Create a drawNumbers() function for drawing the clock numbers
+function drawNumbers() {
+var num, ang;
+// Set the font size of the drawing object to 15% of the radius
+ctx.font = radius * 0.16 + 'px Helvetica';
+// Set the text alignment to the middle and the center of the print position
+ctx.textBaseline = 'middle';
+ctx.textAlign = 'center';
+// Calculate the print position for 12 numbers to 85% of the radius, rotated (PI/6) for each number
+for (num = 1; num < 13; num++) {
+ang = num * Math.PI / 6;
+ctx.rotate(ang);
+ctx.translate(0, -radius * 0.80);
+ctx.rotate(-ang);
+ctx.fillText(num.toString(), 0, 0);
+ctx.rotate(ang);
+ctx.translate(0, radius * 0.80);
+ctx.rotate(-ang);
+}
+}
+
+// Create a drawTime() function for calculate and drawing the clock time
+function drawTime() {
+// Use Date to get hour, minute, second
+var now = new Date();
+var hour = now.getHours();
+var minute = now.getMinutes();
+var second = now.getSeconds();
+// Calculate the angle of the hour hand, and draw it a length 50% of radius, and a width 7% of radius
+// hour
+hour = hour % 12;
+hour = (hour * Math.PI/6) + (minute * Math.PI/(6*60)) + (second * Math.PI/(360*60));
+drawHand(ctx, hour, radius * 0.45, radius * 0.06);
+// Use the same technique for minutes and seconds
+// minute
+minute = (minute * Math.PI/30) + (second * Math.PI/(30*60));
+drawHand(ctx, minute, radius * 0.7, radius * 0.06);
+// second
+second = (second * Math.PI/30);
+drawHand(ctx, second, radius * 0.8, radius * 0.01);
+}
+
+// Create a drawHand() function for drawing the clock hands
+function drawHand(ctx, pos, length, width) {
+// The drawHand() routine just draws a line with a given length and width
+ctx.beginPath();
+ctx.lineWidth = width;
+ctx.lineCap = "round";
+ctx.moveTo(0,0);
+ctx.rotate(pos);
+ctx.lineTo(0, -length);
+ctx.stroke();
+ctx.rotate(-pos);
+}
+}); 
+      
+     
+    
+    
+      
+  /*datum✅ vreme*/
+      function clock() {
+      var clock = document.getElementById("clock")
+      var dateT  = document.getElementById("date")
+      var d = new Date()
+      var hh = c(d.getHours())
+      var mm = c(d.getMinutes())
+      var ss = c(d.getSeconds())
+      var day = d.getDay()
+      var date = d.getDate()
+      var month = d.getMonth()
+      var year = d.getFullYear()
+      
+      if(date !=1 && date !=2 && date !=3) {
+      date += "th"
+      } else {
+      date == 1? date="1st" : null
+      date == 2? date="2nd" : null
+      date == 3? date="3rd" : null
+      }
+      
+      switch(day) {
+      case 0: day = "Nedelja"; break
+      case 1: day = "Ponedeljak"; break
+      case 2: day = "Utorak"; break
+      case 3: day = "Sreda"; break
+      case 4: day = "Cetvrtak"; break
+      case 5: day = "Petak"; break
+      case 6: day = "Subota"; break
+      } switch(month) {
+      case 0:  month = "Januar"; break
+      case 1 : month = "Februar"; break
+      case 2:  month = "Mart"; break
+      case 3:  month = "April"; break
+      case 4:  month = "Maj"; break
+      case 5:  month = "Jun"; break
+      case 6:  month = "Jul"; break
+      case 7:  month = "August"; break
+      case 8:  month = "Septembar"; break
+      case 9:  month = "Oktobar"; break
+      case 10: month = "Novembar"; break
+      case 11: month = "Decembar"; break
+      }
+      
+      clock.innerHTML = hh+":"+mm+":"+ss;
+      dateT.innerHTML = day+", "+date+" "+month+" "+year
+      }
+      
+      c = (t) => t < 10? "0"+t: t
+      window.onload = () => clock() || setInterval(clock,1000);
+      
+ 
+   
+   </script>
+ </body>
+</html>
